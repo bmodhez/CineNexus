@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("WhatsApp\ Image\ 2024-05-16\ at\ 19.42.05_6c989433.jpg");
+  overflow: auto;
+}
+
+.poster {
+  float: left;
+  margin-left: 12vh;
+  margin-top: 10vh;
+  margin-right: 4vh;
+}
+.poster img {
+  height: 65vh;
+}
+
+.content {
+  padding-top: 11vh;
+}
+.content h1 {
+  padding-left: 4vh;
+  font-size: 40px;
+  color: white;
+}
+.content p {
+  padding-right: 25vh;
+  color: whitesmoke;
+}
+.year {
+  font-size: 3vh;
+  color: #6ab95d;
+  background-color: #000;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("preloader/bgimage.avif");
+  transition: opacity 0.75s, visibility 0.75s;
+  z-index: 9999;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  /* border: 15px solid #dddddd; */
+  border-top-color: rgba(255, 119, 0, 1);
+  border-radius: 50%;
+  animation: loading 2s linear infinite;
+}
+ .orange {
+  color: #ff7700;
+  font-size: 35px;
+}
+.white {
+  color: white;
+  font-size: 28px;
+}
+.green{
+  color: #19bd00;
+  font-size: 40px;
+
+}
+.heading {
+  margin-top: 10vh;
+  margin-left: 20vh;
+  text-decoration: underline;
+}
+.heading  {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 5vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.movie-container {
+  max-width: 1000px;
+  margin-left: 27vh;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));;
+  gap: 4vh;
+  margin-top: 2rem;
+}
+
+.box .box-img {
+  width: 100%;
+  height: 270px;
+}
+
+.box .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box .box-img img:hover {
+  transform: translateY(-10px);
+  transition: 0.2s all linear;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+.video-container {
+  position: absolute;
+  top: 15vh; /* Adjust the distance from the top */
+  right: 10vh; /* Adjust the distance from the right */
+  padding-bottom: 45vh;
+  overflow: hidden;
+  width: 500px;
+  /* height: 25px; */
+  background: #000;
+  border-radius: 12px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 50vh;
+}
+
+span {
+  color: #b8b7b8;
+  font-weight: 560;
+  font-size: 18px;
+}
+.s2 {
+  margin-left: 3vh;
+  font-size: 3vh;
+  background-color: #000;
+}
+.s3 {
+  margin-left: 1vh;
+}
+.genres {
+  margin-top: 5vh;
+}
+button {
+  margin-left: 2vh;
+  height: 4vh;
+  width: 10vh;
+  border-radius: 50px;
+  cursor: pointer;
+  border-color: rgb(255, 255, 255);
+  background-color: transparent;
+  color: white;
+}
+.rating {
+  margin-top: 4vh;
+  display: flex;
+}
+.rating img {
+  height: 30px;
+}
+.rating p {
+  margin-left: 3px;
+  margin-top: 3px;
+  font-size: 20px;
+}
+.im2 {
+  margin-right: 5px;
+}
+.play {
+  margin-top: 4vh;
+}
+.play button {
+  height: 45px;
+  background-color: #7fd690;
+  width: 20vh;
+  font-size: 18px;
+  border: none;
+  color: black;
+}
+.play i {
+  font-size: 20px;
+}
+
+.language {
+  margin-top: 15px;
+}
+.language h4 {
+  color: #afafaf;
+  font-size: 24px;
+}
+.language span {
+  color: white;
+  font-size: 20px;
+}
+.dec {
+  margin-top: 9vh;
+}
+.dec p {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.cast {
+  color: white;
+  margin-top: 3vh;
+  text-align: center;
+  margin-left: 20vh;
+}
+.cast p {
+  font-size: 22px;
+  margin-top: 3vh;
+}
+.cast a {
+  color: rgb(255, 225, 0);
+  text-decoration: none;
+  margin-top: 5vh;
+}
+
+.scam-btn {
+  margin-top: 5vh;
+  width: 40vh;
+  cursor: pointer;
+}
+
+.scam-btn img {
+  height: 25vh;
+  width: 40vh;
+  margin-left: 79vh;
+}
+.scam-btn2 {
+  margin-top: 5vh;
+  width: 40vh;
+  cursor: pointer;
+}
+
+.scam-btn2 img {
+  height: 30vh;
+  width: 40vh;
+  margin-left: 79vh;
+}
+footer {
+  margin-top: 5vh;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.col img {
+  width: 25vh;
+}
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 25%;
+  padding: 0;
+}
+.col p {
+  font-size: 18px;
+  margin-top: 3vh;
+}
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+.logo {
+  width: 80px;
+  margin-bottom: 30px;
+}
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+  font-size: 20px;
+}
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #fff;
+  margin: 20px 0;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 50px;
+}
+form.far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+  margin-left: 5px;
+  font-size: 16px;
+}
+form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+form button .far {
+  font-size: 16px;
+  color: #ccc;
+}
+.social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+  background: hidden;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: background-color, color;
+}
+.social-icons .fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+  background: hidden;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: background-color, color;
+}
+.social-icons .fab.fa-facebook-f:hover{
+  transition: 0.4s ease;
+  background-color: #3b5998;
+  color: white;
+}
+.social-icons .fab.fa-whatsapp:hover{
+  transition: 0.4s ease;
+  background-color: #19bd00;
+  color: white;
+}
+.social-icons .fa-brands.fa-linkedin-in:hover{
+  transition: 0.4s ease;
+  background-color: #fffafa;
+  color: rgb(0, 105, 211);
+}
+.social-icons .fa-brands.fa-x-twitter:hover{
+  transition: 0.4s ease;
+  background-color: #f7f9ff;
+  color: rgb(0, 0, 0);
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  margin: 20px auto;
+}
+.copyright {
+  text-align: center;
+  font-size: 16px;
+}
+.copyright span {
+  color: #e5a00d;
+}
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: gold;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+  }
+  .col {
+    flex-basis: 100%;
+  }
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 100%;
+  }
+}
